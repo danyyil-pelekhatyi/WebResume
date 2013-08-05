@@ -1,0 +1,80 @@
+﻿@model IEnumerable<Resume.Models.Cv>
+@{
+    ViewBag.Title = "Curriculum vitae";
+}
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; My name is Danyyil Pelekhatyyi.
+    Some aditional information you can retrieve from the table above.
+</p>
+<p>
+    @ViewBag.Filter
+</p>
+<div id="cv-bar">
+    <div id="filters-container">
+        <span>Filter:</span>
+        <select id="filter" size="" name="filter">
+            <option id="filter-none" value="none">None</option>
+            <option id="filter-education" value="education">Education</option>
+            <option id="filter-work" value="work">Work</option>
+            <option id="filter-other" value="other">Other</option>
+        </select>
+        <span>Search:</span>
+        <input id="search" name="search" />
+    </div>
+    <hr />
+    <div>
+        <table class="cv-table">
+            <thead>
+                <tr>
+                    <th class="first">
+                        Activity
+                    </th>
+                    <th class="second">
+                        Description
+                    </th>
+                    <th class="third">
+                        Period
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div id="cv-div">
+        <table id="cv-table" class="cv-table">
+        </table>
+    </div>
+</div>
+@section scripts{
+    <script type="text/javascript">
+        function getData()
+        {
+            var requestUrl = '@Url.Action("GetCvItems")';
+            var requestFilter = $("#filter").val();
+            var requestSearch = $("#search").val();
+            $.get(requestUrl, { filter: requestFilter, search: requestSearch },
+            function (data)
+            {
+                var $table = $("#cv-table").empty();
+                $.each(data, function (i, val)
+                {
+                    var row = "<tr><td class='first'>" + val.Cv.Activity + "</td>";
+                    row += "<td class='second'>" + val.Cv.Description + "</td>";
+                    row += "<td class='third'>" + val.FormattedStartDate + " - "
+                            + val.FormattedEndDate + "</td></tr>";
+                    $table.append(row);
+                });
+            });
+        };
+
+        $(function ()
+        {
+            getData();
+            $("#filter").change(function () {
+                getData();
+            });
+            $("#search").keypress(function () {
+                getData();
+            });
+        }); 
+    </script>
+}

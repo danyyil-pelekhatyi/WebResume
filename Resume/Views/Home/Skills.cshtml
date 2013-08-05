@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Skills";
+}
+<span class="label">
+    Main skills:
+</span>
+<ul class="skills-list">
+    <li>Good knowledges in C#.</li>
+    <li>Understanding of OOP principles.</li>
+    <li>Expirience in HTML, CSS, JS, Jquery.</li>
+    <li>Familiar with LINQ, ADO.NET, ASP.NET.</li>
+    <li>Basic knowledges in databases.</li>
+</ul>
+<span class="label">
+    Soft skills:
+</span>
+<ul class="skills-list">
+    <li>Fast learning. Really.</li>
+    <li>Highly adaptable.</li>
+    <li>Communicative, a bit talkative.</li>
+    <li>Hard working, when motivated.</li>
+</ul>
+<span class="label">
+    Hobbies:
+</span>
+<ul class="skills-list">
+    <li>Reading.</li>
+    <li>Muay thai.</li>
+    <li>Gaming.</li>
+    <li>Basketball.</li>
+    <li>Speedcubing.</li>
+    <li>Eating.</li>
+</ul>
+@section scripts{
+    <script type="text/javascript">
+        $(function () {
+            $("ul.skills-list li").mouseenter(function () {
+                $(this).stop(true, true);
+                $(this).animate({ "padding-left": "40px" }, "fast");
+            });
+            $("ul.skills-list li").mouseleave(function () {
+                $(this).animate({ "padding-left": "0px" }, "fast");
+            });
+        });
+    </script>
+}
