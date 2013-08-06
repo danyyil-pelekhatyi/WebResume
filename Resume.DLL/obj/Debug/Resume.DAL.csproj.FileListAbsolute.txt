@@ -3,3 +3,8 @@ D:\WebResume\Resume.DLL\bin\Debug\Resume.DLL.pdb
 D:\WebResume\Resume.DLL\obj\Debug\ResolveAssemblyReference.cache
 D:\WebResume\Resume.DLL\obj\Debug\Resume.DLL.dll
 D:\WebResume\Resume.DLL\obj\Debug\Resume.DLL.pdb
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.DLL\bin\Debug\Resume.DLL.dll
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.DLL\bin\Debug\Resume.DLL.pdb
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.DLL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.DLL\obj\Debug\Resume.DLL.dll
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.DLL\obj\Debug\Resume.DLL.pdb
