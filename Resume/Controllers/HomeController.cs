@@ -55,7 +55,6 @@ namespace Resume.Controllers
 
 
 
-        [Authorize]
         public ActionResult Chat()
         {
             ViewBag.Message = "Try it out";
@@ -64,7 +63,6 @@ namespace Resume.Controllers
         }
 
         [HttpGet]
-        [Authorize]
         public ActionResult Feedback()
         {
             ViewBag.Message = "I apreciate every comment on my work";
@@ -76,14 +74,13 @@ namespace Resume.Controllers
         }
 
         [HttpPost]
-        [Authorize]
-        public ActionResult Feedback(string feedback)
+        public ActionResult Feedback(string feedback, string name)
         {
             if (ModelState.IsValid)
             {
                 _db.Feedbacks.Add(new Feedback
                     {
-                        Name = User.Identity.Name,
+                        Name = name,
                         Time = DateTime.Now,
                         Comment = feedback
                     });

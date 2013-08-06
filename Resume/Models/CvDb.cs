@@ -13,7 +13,6 @@ namespace Resume.Models
         }
 
         public DbSet<Cv> CvParts { get; set; }
-        public DbSet<UserProfile> UserProfiles { get; set; }
         public DbSet<Feedback> Feedbacks { get; set; }
     }
 }

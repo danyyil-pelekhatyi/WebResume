@@ -5,12 +5,15 @@
     <div id="chat">
         <input type="text" id="message" />
         <input type="button" id="sendmessage" value="Send" />
-        <input type="hidden" id="displayname" value="@User.Identity.Name" />
+        <input type="hidden" id="displayname" value="" />
         <ul id="discussion">
         </ul>
     </div>
 </div>
 @section scripts {
+    <script type="text/javascript">
+        $("#displayname").val(prompt("Enter your name"));
+    </script>
     <!--Script references. -->
     <!--The jQuery library is required and is referenced by default in _Layout.cshtml. -->
     <!--Reference the SignalR library. -->

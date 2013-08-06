@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resume", "Resume\Resume.csproj", "{7C15C957-BD9D-4B9A-B8DA-A3CCEEFDF8D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resume.PL", "Resume\Resume.PL.csproj", "{7C15C957-BD9D-4B9A-B8DA-A3CCEEFDF8D1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resume.Tests", "Resume.Tests\Resume.Tests.csproj", "{71474081-65CD-4C42-9FC0-66F10A559918}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resume.DAL", "Resume.DLL\Resume.DAL.csproj", "{273C0569-33EE-4E78-8949-346DC62A6F75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resume.BLL", "Resume.BLL\Resume.BLL.csproj", "{9068B467-2F21-4A2B-96F4-F66BE6F7A4EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +23,14 @@ Global
 		{71474081-65CD-4C42-9FC0-66F10A559918}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71474081-65CD-4C42-9FC0-66F10A559918}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71474081-65CD-4C42-9FC0-66F10A559918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{273C0569-33EE-4E78-8949-346DC62A6F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{273C0569-33EE-4E78-8949-346DC62A6F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{273C0569-33EE-4E78-8949-346DC62A6F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{273C0569-33EE-4E78-8949-346DC62A6F75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9068B467-2F21-4A2B-96F4-F66BE6F7A4EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9068B467-2F21-4A2B-96F4-F66BE6F7A4EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9068B467-2F21-4A2B-96F4-F66BE6F7A4EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9068B467-2F21-4A2B-96F4-F66BE6F7A4EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

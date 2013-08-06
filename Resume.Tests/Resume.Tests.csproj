@@ -107,9 +107,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Resume\Resume.csproj">
+    <ProjectReference Include="..\Resume\Resume.PL.csproj">
       <Project>{7C15C957-BD9D-4B9A-B8DA-A3CCEEFDF8D1}</Project>
-      <Name>Resume</Name>
+      <Name>Resume.PL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

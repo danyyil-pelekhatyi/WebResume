@@ -1,0 +1,7 @@
+D:\WebResume\Resume.BLL\bin\Debug\Resume.BLL.dll
+D:\WebResume\Resume.BLL\bin\Debug\Resume.BLL.pdb
+D:\WebResume\Resume.BLL\bin\Debug\Resume.DLL.dll
+D:\WebResume\Resume.BLL\bin\Debug\Resume.DLL.pdb
+D:\WebResume\Resume.BLL\obj\Debug\ResolveAssemblyReference.cache
+D:\WebResume\Resume.BLL\obj\Debug\Resume.BLL.dll
+D:\WebResume\Resume.BLL\obj\Debug\Resume.BLL.pdb

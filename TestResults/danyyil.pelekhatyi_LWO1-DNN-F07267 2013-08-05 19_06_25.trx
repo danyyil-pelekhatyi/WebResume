@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5508c5ed-3105-4900-b688-09912b8ca242" name="danyyil.pelekhatyi@LWO1-DNN-F07267 2013-08-05 19:06:25" runUser="SYNAPSE\danyyil.pelekhatyi" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="36808797-21b8-4b2b-8b17-82ed9ce92b16">
+    <Deployment runDeploymentRoot="danyyil.pelekhatyi_LWO1-DNN-F07267 2013-08-05 19_06_25">
+      <DeploymentItem filename="D:\WebResume\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll" />
+      <DeploymentItem filename="D:\WebResume\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll" />
+      <DeploymentItem filename="D:\WebResume\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll" />
+      <DeploymentItem filename="D:\WebResume\Resume\bin\Resume.dll" />
+      <DeploymentItem filename="D:\WebResume\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll" />
+      <DeploymentItem filename="D:\WebResume\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="D:\WebResume\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll" />
+      <DeploymentItem filename="D:\WebResume\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll" />
+      <DeploymentItem filename="D:\WebResume\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll" />
+      <DeploymentItem filename="D:\WebResume\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll" />
+      <DeploymentItem filename="D:\WebResume\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll" />
+      <DeploymentItem filename="D:\WebResume\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll" />
+      <DeploymentItem filename="D:\WebResume\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll" />
+      <DeploymentItem filename="D:\WebResume\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-08-05T19:06:25.9315729+03:00" queuing="2013-08-05T19:06:26.2406038+03:00" start="2013-08-05T19:06:26.2986096+03:00" finish="2013-08-05T19:06:26.6876485+03:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="About" storage="d:\webresume\resume.tests\bin\debug\resume.tests.dll" id="7cc0e059-5746-ad7a-74e4-7e9e1cfe73b5">
+      <Execution id="431cced6-4161-4299-aa0a-75d369132339" />
+      <TestMethod codeBase="D:/WebResume/Resume.Tests/bin/Debug/Resume.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Resume.Tests.Controllers.HomeControllerTest, Resume.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="About" />
+    </UnitTest>
+    <UnitTest name="Contact" storage="d:\webresume\resume.tests\bin\debug\resume.tests.dll" id="0eb2c5b0-0b8e-0eee-d784-8ee268bfe689">
+      <Execution id="b4ad8aa9-0233-4eb1-a34e-ad55b558cd3d" />
+      <TestMethod codeBase="D:/WebResume/Resume.Tests/bin/Debug/Resume.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Resume.Tests.Controllers.HomeControllerTest, Resume.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Contact" />
+    </UnitTest>
+    <UnitTest name="Index" storage="d:\webresume\resume.tests\bin\debug\resume.tests.dll" id="cc69d18a-58df-fc7b-3be7-e9d529848ea1">
+      <Execution id="62ae2f2f-72c8-4b5d-a184-5e0a5039891f" />
+      <TestMethod codeBase="D:/WebResume/Resume.Tests/bin/Debug/Resume.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Resume.Tests.Controllers.HomeControllerTest, Resume.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Index" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="cc69d18a-58df-fc7b-3be7-e9d529848ea1" executionId="62ae2f2f-72c8-4b5d-a184-5e0a5039891f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7cc0e059-5746-ad7a-74e4-7e9e1cfe73b5" executionId="431cced6-4161-4299-aa0a-75d369132339" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0eb2c5b0-0b8e-0eee-d784-8ee268bfe689" executionId="b4ad8aa9-0233-4eb1-a34e-ad55b558cd3d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="62ae2f2f-72c8-4b5d-a184-5e0a5039891f" testId="cc69d18a-58df-fc7b-3be7-e9d529848ea1" testName="Index" computerName="LWO1-DNN-F07267" duration="00:00:00.0097540" startTime="2013-08-05T19:06:26.3516149+03:00" endTime="2013-08-05T19:06:26.6246422+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="62ae2f2f-72c8-4b5d-a184-5e0a5039891f">
+    </UnitTestResult>
+    <UnitTestResult executionId="431cced6-4161-4299-aa0a-75d369132339" testId="7cc0e059-5746-ad7a-74e4-7e9e1cfe73b5" testName="About" computerName="LWO1-DNN-F07267" duration="00:00:00.0001141" startTime="2013-08-05T19:06:26.6266424+03:00" endTime="2013-08-05T19:06:26.6296427+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="431cced6-4161-4299-aa0a-75d369132339">
+    </UnitTestResult>
+    <UnitTestResult executionId="b4ad8aa9-0233-4eb1-a34e-ad55b558cd3d" testId="0eb2c5b0-0b8e-0eee-d784-8ee268bfe689" testName="Contact" computerName="LWO1-DNN-F07267" duration="00:00:00.0001106" startTime="2013-08-05T19:06:26.6316429+03:00" endTime="2013-08-05T19:06:26.6346432+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b4ad8aa9-0233-4eb1-a34e-ad55b558cd3d">
+    </UnitTestResult>
+  </Results>
+</TestRun>

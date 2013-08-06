@@ -40,7 +40,8 @@
                 {
                     var url = '@Url.Action("Feedback", "Home")';
                     var text = $(this).val();
-                    $.post(url, { feedback: text })
+                    var pseudo = prompt("Enter your name");
+                    $.post(url, { feedback: text, name: pseudo })
                     .done(function ()
                     {
                         location.reload(true);
