@@ -1,0 +1,15 @@
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.BLL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.BLL\bin\Debug\EntityFramework.dll
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.BLL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.BLL\bin\Debug\EntityFramework.xml
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.BLL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.BLL\bin\Debug\Resume.Infrastructure.dll.config
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.BLL\bin\Debug\Resume.Infrastructure.dll
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.BLL\bin\Debug\Resume.Infrastructure.pdb
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.BLL\obj\Debug\Resume.Infrastructure.dll
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.BLL\obj\Debug\Resume.Infrastructure.pdb
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.BLL\obj\Debug\Resume.Infrastructure.Migrations.Infrastructure.resources
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.BLL\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.BLL\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.BLL\bin\Debug\Resume.Core.dll
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.BLL\bin\Debug\Resume.Core.pdb

@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resume.PL", "Resume\Resume.PL.csproj", "{7C15C957-BD9D-4B9A-B8DA-A3CCEEFDF8D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resume.Web", "Resume\Resume.Web.csproj", "{7C15C957-BD9D-4B9A-B8DA-A3CCEEFDF8D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resume.Tests", "Resume.Tests\Resume.Tests.csproj", "{71474081-65CD-4C42-9FC0-66F10A559918}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resume.Test", "Resume.Tests\Resume.Test.csproj", "{71474081-65CD-4C42-9FC0-66F10A559918}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resume.DAL", "Resume.DLL\Resume.DAL.csproj", "{273C0569-33EE-4E78-8949-346DC62A6F75}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resume.Core", "Resume.DLL\Resume.Core.csproj", "{273C0569-33EE-4E78-8949-346DC62A6F75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resume.BLL", "Resume.BLL\Resume.BLL.csproj", "{9068B467-2F21-4A2B-96F4-F66BE6F7A4EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resume.Infrastructure", "Resume.BLL\Resume.Infrastructure.csproj", "{9068B467-2F21-4A2B-96F4-F66BE6F7A4EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
