@@ -1,20 +1,33 @@
 ﻿using System;
+using System.Data.Objects;
 using System.Linq;
 using System.Web.Mvc;
+using Resume.Core.Interfaces;
 using Resume.Core.Models;
-using Resume.Infrastructure.Models;
 using Resume.Infrastructure.ViewModel;
+using Resume.Infrastructure.Repositories;
+using Resume.Infrastructure.UnitOfWork;
 
 namespace Resume.Infrastructure.Controllers
 {
     public class HomeController : Controller
     {
-        CvDb _db = new CvDb();
+        //private readonly CvDb _db = new CvDb();
+        private IUnitOfWork _unitOfWork;
+        private IRepository<Activity> _activityRepository;//= new Repository<Activity>(_db);
+        private IRepository<Feedback> _feedbackRepository;// = new Repository<Feedback>(_db);
+
+        public void InitUnitOfWork(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = _unitOfWork ?? unitOfWork;
+            _activityRepository = _activityRepository ?? _unitOfWork.Activities;
+            _feedbackRepository = _feedbackRepository ?? _unitOfWork.Feedbacks;
+        }
 
         public ActionResult Index()
         {
             ViewBag.Message = "Welcome";
-
+            
             return View();
         }
 
@@ -33,19 +46,24 @@ namespace Resume.Infrastructure.Controllers
         }
 
 
-        public JsonResult GetCvItems(string filter = "", string search = "")
+        public JsonResult GetCvItems(string filter = "none", string search = "")
         {
             ViewBag.Filter = filter;
-            var model = from r in _db.CvParts
-                        where (filter == "none" || r.Flag == filter) &&
-                        (string.IsNullOrEmpty(search) || r.Activity.Contains(search)
-                        || r.Description.Contains(search))
-                        orderby r.Start descending
-                        select r;
+            InitUnitOfWork(new SimpleUnitOfWork());
+            var model =
+                _activityRepository.Find(
+                    e => (e.ActivityType.ActivityTypeName == filter || filter == "none") && (e.ActivityName.Contains(search) || e.Description.Contains(search)));
 
-            var viewModel = model.Select(x => new CvViewModel
+            //var model = from r in _db.Activities
+            //            where (filter == "none" ||
+            //            (from t in _db.ActivityTypes where t.ActivityTypeId == r.ActivityType.ActivityTypeId select t.ActivityTypeName).ToString() == filter) &&
+            //            (string.IsNullOrEmpty(search) || r.ActivityName.Contains(search) || r.Description.Contains(search))
+            //            orderby r.Start descending
+            //            select r;
+
+            var viewModel = model.Select(x => new ActivityViewModel
             {
-                Cv = x
+                Activity = x
             });
 
             return Json(viewModel, JsonRequestBehavior.AllowGet);
@@ -65,10 +83,13 @@ namespace Resume.Infrastructure.Controllers
         public ActionResult Feedback()
         {
             ViewBag.Message = "I apreciate every comment on my work";
-            var model = (from x in _db.Feedbacks
-                         orderby x.Time descending
-                         select x)
-                            .Take(5);
+            InitUnitOfWork(new SimpleUnitOfWork());
+            //var model = (from x in _db.Feedbacks
+            //             orderby x.Time descending
+            //             select x)
+            //                .Take(5);
+            var model = _feedbackRepository.Find(e => true).Take(5);
+
             return View(model);
         }
 
@@ -77,13 +98,14 @@ namespace Resume.Infrastructure.Controllers
         {
             if (ModelState.IsValid)
             {
-                _db.Feedbacks.Add(new Feedback
+                InitUnitOfWork(new SimpleUnitOfWork());
+                _feedbackRepository.Add(new Feedback
                     {
                         Name = name,
                         Time = DateTime.Now,
                         Comment = feedback
                     });
-                _db.SaveChanges();
+                _unitOfWork.Commit();
                 return RedirectToAction("Feedback");
             }
             return RedirectToAction("Index");
@@ -103,11 +125,11 @@ namespace Resume.Infrastructure.Controllers
             return View();
         }
 
-        protected override void Dispose(bool disposing)
-        {
-            if (_db != null)
-                _db.Dispose();
-            base.Dispose(disposing);
-        }
+        //protected override void Dispose(bool disposing)
+        //{
+        //    if (_db != null)
+        //        _db.Dispose();
+        //    base.Dispose(disposing);
+        //}
     }
 }

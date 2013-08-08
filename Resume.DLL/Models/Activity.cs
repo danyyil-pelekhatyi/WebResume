@@ -1,14 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Resume.Core.Models
 {
-    public class Cv
+    public class Activity
     {
         public int Id { get; set; }
-        public string Activity { get; set; }
+        public string ActivityName { get; set; }
         public string Description { get; set; }
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
-        public string Flag { get; set; }
+        public ActivityType ActivityType { get; set; }
     }
 }

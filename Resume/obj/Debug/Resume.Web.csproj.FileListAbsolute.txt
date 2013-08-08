@@ -2,10 +2,6 @@ C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\obj\Debug\ResolveA
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\obj\Debug\Resume.Migrations.InitialMigrations.resources
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\obj\Debug\GenerateResource.read.1.tlog
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\obj\Debug\GenerateResource.write.1.tlog
-C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\obj\Debug\Resume.dll
-C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\obj\Debug\Resume.pdb
-C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\bin\Resume.dll
-C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\bin\Resume.pdb
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\bin\Antlr3.Runtime.dll
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\bin\DotNetOpenAuth.AspNet.dll
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\bin\DotNetOpenAuth.Core.dll
@@ -69,3 +65,8 @@ C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\bin\Resume.Infrast
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\bin\Resume.Infrastructure.pdb
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\bin\Resume.Core.dll
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\bin\Resume.Core.pdb
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\bin\Resume.Web.dll
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\bin\Resume.Web.pdb
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\obj\Debug\Resume.Web.dll
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\obj\Debug\Resume.Web.pdb
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\obj\Debug\Resume.Migrations.preCvToActivity.resources

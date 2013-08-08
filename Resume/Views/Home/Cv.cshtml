@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Resume.Core.Models.Cv>
+﻿@model IEnumerable<Resume.Core.Models.Activity>
 @{
     ViewBag.Title = "Curriculum vitae";
 }
@@ -57,8 +57,8 @@
                 var $table = $("#cv-table").empty();
                 $.each(data, function (i, val)
                 {
-                    var row = "<tr><td class='first'>" + val.Cv.Activity + "</td>";
-                    row += "<td class='second'>" + val.Cv.Description + "</td>";
+                    var row = "<tr><td class='first'>" + val.Activity.ActivityName + "</td>";
+                    row += "<td class='second'>" + val.Activity.Description + "</td>";
                     row += "<td class='third'>" + val.FormattedStartDate + " - "
                             + val.FormattedEndDate + "</td></tr>";
                     $table.append(row);

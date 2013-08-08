@@ -3,7 +3,6 @@ C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Re
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Resume.Tests.pdb
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Newtonsoft.Json.dll
-C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Resume.dll
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\System.Net.Http.dll
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\System.Net.Http.Formatting.dll
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\System.Net.Http.WebRequest.dll
@@ -24,7 +23,6 @@ C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Ow
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Microsoft.AspNet.SignalR.Owin.dll
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Antlr3.Runtime.dll
-C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Resume.pdb
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Newtonsoft.Json.xml
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\System.Net.Http.xml
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\System.Net.Http.Formatting.xml
@@ -49,3 +47,5 @@ C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Re
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Resume.Infrastructure.pdb
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Resume.Core.dll
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Resume.Core.pdb
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Resume.Web.dll
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Resume.Web.pdb

@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Resume.Web;
 using WebMatrix.WebData;
 
 namespace Resume
@@ -21,8 +22,8 @@ namespace Resume
 
             RouteTable.Routes.MapHubs();
 
-            WebSecurity.InitializeDatabaseConnection("DefaultConnection", "UserProfile",
-                "UserId", "UserName", autoCreateTables: true);
+            //WebSecurity.InitializeDatabaseConnection("DefaultConnection", "UserProfile",
+              //  "UserId", "UserName", autoCreateTables: true);
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

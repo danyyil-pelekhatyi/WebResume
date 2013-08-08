@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNet.SignalR;
 
-namespace Resume.Hubs
+namespace Resume.Web.Hubs
 {
     public class ChatHub : Hub
     {
