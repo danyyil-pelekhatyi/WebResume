@@ -13,28 +13,23 @@ namespace Resume.Infrastructure.Controllers
 {
     public class HomeController : Controller
     {
-        //private readonly CvDb _db = new CvDb();
-        private IUnitOfWork _unitOfWork;
-        private IRepository<Activity> _activityRepository;//= new Repository<Activity>(_db);
-        private IRepository<Feedback> _feedbackRepository;// = new Repository<Feedback>(_db);
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IRepository<Activity> _activityRepository;
+        private readonly IRepository<Feedback> _feedbackRepository;
 
-        public void InitUnitOfWork(IUnitOfWork unitOfWork)
+        public HomeController()
         {
-            if (_unitOfWork == null)
-            {
-                var container = new UnityContainer();
-                container.RegisterType<IUnitOfWork, SimpleUnitOfWork>();
-                //container.RegisterType<IRepository<T>, Repository<T>>();
-                _unitOfWork = container.Resolve<IUnitOfWork>();
-                _activityRepository = _unitOfWork.Activities;
-                _feedbackRepository = _unitOfWork.Feedbacks;
-            }
+            var container = new UnityContainer();
+            container.RegisterType<IUnitOfWork, SimpleUnitOfWork>();
+            _unitOfWork = container.Resolve<IUnitOfWork>();
+            _activityRepository = _unitOfWork.Activities;
+            _feedbackRepository = _unitOfWork.Feedbacks;
         }
 
         public ActionResult Index()
         {
             ViewBag.Message = "Welcome";
-            
+
             return View();
         }
 
@@ -56,7 +51,6 @@ namespace Resume.Infrastructure.Controllers
         public JsonResult GetCvItems(string filter = "none", string search = "")
         {
             ViewBag.Filter = filter;
-            InitUnitOfWork(new SimpleUnitOfWork());
             var model =
                 _activityRepository.Find(
                     e => (e.ActivityType.ActivityTypeName == filter || filter == "none") && (e.ActivityName.Contains(search) || e.Description.Contains(search)));
@@ -90,7 +84,6 @@ namespace Resume.Infrastructure.Controllers
         public ActionResult Feedback()
         {
             ViewBag.Message = "I apreciate every comment on my work";
-            InitUnitOfWork(new SimpleUnitOfWork());
             //var model = (from x in _db.Feedbacks
             //             orderby x.Time descending
             //             select x)
@@ -105,7 +98,6 @@ namespace Resume.Infrastructure.Controllers
         {
             if (ModelState.IsValid)
             {
-                InitUnitOfWork(new SimpleUnitOfWork());
                 _feedbackRepository.Add(new Feedback
                     {
                         Name = name,
