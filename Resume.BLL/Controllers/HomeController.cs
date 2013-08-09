@@ -2,6 +2,7 @@
 using System.Data.Objects;
 using System.Linq;
 using System.Web.Mvc;
+using Microsoft.Practices.Unity;
 using Resume.Core.Interfaces;
 using Resume.Core.Models;
 using Resume.Infrastructure.ViewModel;
@@ -19,9 +20,15 @@ namespace Resume.Infrastructure.Controllers
 
         public void InitUnitOfWork(IUnitOfWork unitOfWork)
         {
-            _unitOfWork = _unitOfWork ?? unitOfWork;
-            _activityRepository = _activityRepository ?? _unitOfWork.Activities;
-            _feedbackRepository = _feedbackRepository ?? _unitOfWork.Feedbacks;
+            if (_unitOfWork == null)
+            {
+                var container = new UnityContainer();
+                container.RegisterType<IUnitOfWork, SimpleUnitOfWork>();
+                //container.RegisterType<IRepository<T>, Repository<T>>();
+                _unitOfWork = container.Resolve<IUnitOfWork>();
+                _activityRepository = _unitOfWork.Activities;
+                _feedbackRepository = _unitOfWork.Feedbacks;
+            }
         }
 
         public ActionResult Index()

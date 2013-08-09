@@ -49,3 +49,9 @@ C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Re
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Resume.Core.pdb
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Resume.Web.dll
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Resume.Web.pdb
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Unity.Mvc4.dll
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml

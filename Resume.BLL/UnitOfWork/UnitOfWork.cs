@@ -1,4 +1,5 @@
 ﻿using System.Data.Entity.Infrastructure;
+using Microsoft.Practices.Unity;
 using Resume.Core.Interfaces;
 using Resume.Core.Models;
 using System.Configuration;

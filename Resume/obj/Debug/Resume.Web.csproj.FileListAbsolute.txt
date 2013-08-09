@@ -70,3 +70,9 @@ C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\bin\Resume.Web.pdb
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\obj\Debug\Resume.Web.dll
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\obj\Debug\Resume.Web.pdb
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\obj\Debug\Resume.Migrations.preCvToActivity.resources
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\bin\Microsoft.Practices.Unity.dll
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\bin\Unity.Mvc4.dll
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\bin\Microsoft.Practices.Unity.xml
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume\bin\Microsoft.Practices.ServiceLocation.xml
