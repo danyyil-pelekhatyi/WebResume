@@ -35,6 +35,9 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -107,6 +110,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Resume.DLL\Resume.Core.csproj">
+      <Project>{273C0569-33EE-4E78-8949-346DC62A6F75}</Project>
+      <Name>Resume.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Resume\Resume.Web.csproj">
       <Project>{7C15C957-BD9D-4B9A-B8DA-A3CCEEFDF8D1}</Project>
       <Name>Resume.Web</Name>

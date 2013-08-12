@@ -1,18 +1,18 @@
-namespace Resume.Infrastructure.Migrations
+namespace Resume.Web.Migrations
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Resume.Infrastructure.Models.CvDb>
+    internal sealed class Configuration : DbMigrationsConfiguration<Resume.Infrastructure.ResumeDb.ResumeDb>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(Resume.Infrastructure.Models.CvDb context)
+        protected override void Seed(Resume.Infrastructure.ResumeDb.ResumeDb context)
         {
             //  This method will be called after migrating to the latest version.
 

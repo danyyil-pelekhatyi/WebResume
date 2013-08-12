@@ -1,5 +1,5 @@
-C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.DLL\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.DLL\bin\Debug\Resume.Core.dll
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.DLL\bin\Debug\Resume.Core.pdb
+C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.DLL\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.DLL\obj\Debug\Resume.Core.dll
 C:\Users\danyyil.pelekhatyi\Documents\GitHub\WebResume\Resume.DLL\obj\Debug\Resume.Core.pdb

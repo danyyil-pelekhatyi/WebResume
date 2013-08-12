@@ -32,13 +32,9 @@ namespace Resume.Infrastructure.Repositories
 
         public void Update(T item)
         {
-            
+            //**********************
         }
     }
-
-    //class MssqlRepository
-    //{
-    //}
 }
 
 
