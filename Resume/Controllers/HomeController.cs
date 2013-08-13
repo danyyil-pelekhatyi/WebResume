@@ -4,7 +4,6 @@ using System.Web.Mvc;
 using Ninject;
 using Resume.Core.Interfaces;
 using Resume.Core.Models;
-using Resume.Web.App_Start;
 using Resume.Web.ViewModel;
 
 
@@ -41,7 +40,7 @@ namespace Resume.Web.Controllers
         }
 
 
-        public JsonResult GetCvItems(string filter = "none", string search = "")
+        public JsonResult GetActivities(string filter = "none", string search = "")
         {
             ViewBag.Filter = filter;
             var model =

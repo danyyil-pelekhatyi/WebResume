@@ -1,6 +1,5 @@
 ﻿using Resume.Core.Models;
 using System.Data.Entity;
-using Resume.Infrastructure.Repositories;
 
 namespace Resume.Infrastructure.ResumeDb
 {

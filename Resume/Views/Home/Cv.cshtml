@@ -48,7 +48,7 @@
     <script type="text/javascript">
         function getData()
         {
-            var requestUrl = '@Url.Action("GetCvItems")';
+            var requestUrl = '@Url.Action("GetActivities")';
             var requestFilter = $("#filter").val();
             var requestSearch = $("#search").val();
             $.get(requestUrl, { filter: requestFilter, search: requestSearch },
