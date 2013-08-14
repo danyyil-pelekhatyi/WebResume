@@ -32,7 +32,7 @@ namespace Resume.Infrastructure.Repositories
 
         public void Update(T item)
         {
-            //**********************
+            ObjectSet.ApplyCurrentValues(item);
         }
     }
 }

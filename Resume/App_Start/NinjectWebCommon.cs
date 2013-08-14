@@ -1,5 +1,6 @@
 using Resume.Core.Interfaces;
 using Resume.Infrastructure.EntityFramework;
+using Resume.Infrastructure.Repositories;
 
 [assembly: WebActivator.PreApplicationStartMethod(typeof(Resume.Web.App_Start.NinjectWebCommon), "Start")]
 [assembly: WebActivator.ApplicationShutdownMethodAttribute(typeof(Resume.Web.App_Start.NinjectWebCommon), "Stop")]
@@ -57,7 +58,7 @@ namespace Resume.Web.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind<IUnitOfWork>().To<SimpleUnitOfWork>();
-            //kernel.Bind<IRepository<T>>().To<IRepository<T>>();
+            kernel.Bind(typeof(IRepository<>)).To(typeof(Repository<>));
         }        
     }
 }

@@ -1,10 +1,30 @@
 ﻿using System.Web.Mvc;
+using System.Web.Util;
 using Resume.Infrastructure.EntityFramework;
 using Resume.Web.Controllers;
 using NUnit.Framework;
+using System.Transactions;
 
 namespace Resume.Tests.Tests
 {
+    [SetUpFixture]
+    public class SetUpFixture
+    {
+        private TransactionScope _transaction;
+
+        [SetUp]
+        public void SetUp()
+        {
+            _transaction = new TransactionScope();
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            _transaction.Complete();
+        }
+    }
+
     [TestFixture]
     public class HomeControllerTest
     {
@@ -13,6 +33,20 @@ namespace Resume.Tests.Tests
         public HomeControllerTest()
         {
             _controller = new HomeController(new SimpleUnitOfWork());
+        }
+
+        [Test]
+        public void GetActivities()
+        {
+            var result = (JsonResult) _controller.GetActivities();
+            Assert.IsTrue(result != null);
+        }
+
+        [Test]
+        public void Feedback()
+        {
+            var result = (ViewResult)_controller.Feedback();
+            Assert.IsTrue(result.Model != null);
         }
 
         [Test]
@@ -34,21 +68,9 @@ namespace Resume.Tests.Tests
         }
 
         [Test]
-        public void GetActivities()
-        {
-
-        }
-
-        [Test]
         public void Chat()
         {
             Assert.IsTrue(_controller.Chat() is ViewResult);
-        }
-
-        [Test]
-        public void Feedback()
-        {
-
         }
 
         [Test]

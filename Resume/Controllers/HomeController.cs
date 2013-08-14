@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Web.Mvc;
-using Ninject;
 using Resume.Core.Interfaces;
 using Resume.Core.Models;
 using Resume.Web.ViewModel;
